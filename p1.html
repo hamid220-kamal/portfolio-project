@@ -1,0 +1,128 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamid Kamal | Future Tech Builder</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #1e293b;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+    .navbar .logo {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+    .navbar nav a {
+      color: #f1f5f9;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .navbar nav a:hover {
+      color: #38bdf8;
+    }
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+    .about, .skills {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background-color: #1e293b;
+      border-radius: 1rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+    .about h2, .skills h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .skills ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .skills li {
+      padding: 0.5rem 0;
+    }
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1e293b;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Hamid Kamal</div>
+    <nav>
+      <a href="p1.html">Home</a>
+      <a href="project.html">Projects</a>
+      <a href="blogs.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" data-aos="fade-up">
+    <h1>Hi, I'm <span id="typed"></span></h1>
+    <p>Turning Code into Creation | Future Tech Builder</p>
+  </section>
+
+  <section class="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>Hey, I’m Hamid Kamal — a tech enthusiast and future builder of digital empires. At just 16, I’ve already committed myself to mastering the art of web development, starting with HTML, CSS, and diving deep into Java.
+
+My goal? To create innovative websites, solve real-world problems with code, and build my own company before I turn 20. I believe in learning by doing, and every line of code I write brings me closer to that dream.
+
+Outside of code, I love exploring new technologies, finding creative solutions, and sharing what I learn with others. This site is just the beginning — stay tuned, because I’m just getting started. 💻🚀</p>
+  </section>
+
+  <section class="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML - Basics</li>
+      <li>CSS - Basics</li>
+      <li>Java - Learning</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p>Made with 💻 by Hamid Kamal</p>
+  </footer>
+
+  <script>
+    new Typed("#typed", {
+      strings: ["Hamid Kamal", "Web Developer", "Java Learner", "Tech Explorer"],
+      typeSpeed: 80,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
