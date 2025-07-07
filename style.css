@@ -32,7 +32,7 @@ body {
   color: #38bdf8;
 }
 
-.page-header, .hero, .about, .skills, .blog-posts, .projects-container, .contact-info {
+.page-header, .hero, .about, .skills, .blog-posts, .projects-container, .contact-info, .mission {
   max-width: 900px;
   margin: 4rem auto;
   padding: 2rem;
