@@ -11,39 +11,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
-  <style>
-    .contact-info a {
-  position: relative;
-  overflow: hidden;
-}
-.contact-info a:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 5px;
-  height: 5px;
-  background: rgba(255,255,255,0.5);
-  opacity: 0;
-  border-radius: 100%;
-  transform: scale(1, 1) translate(-50%);
-  transform-origin: 50% 50%;
-}
-.contact-info a:focus:not(:active)::after {
-  animation: ripple 0.6s ease-out;
-}
-@keyframes ripple {
-  0% { transform: scale(0, 0); opacity: 1; }
-  100% { transform: scale(20, 20); opacity: 0; }
-}
-    .page-header {
-  animation: gradient-pulse 8s infinite alternate;
-}
-@keyframes gradient-pulse {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-  </style>
+ 
   <header class="navbar">
     <div class="logo">Hamid Kamal</div>
     <nav>
@@ -59,16 +27,45 @@
   <p style="font-size: 1.2rem; opacity: 0.9;">Ready to get started? Get in touch!</p>
 </section>
 
-<section class="contact-info" data-aos="fade-up" style="text-align: center; padding: 40px 20px; background-color: #1a1a1a;">
-  <p style="color: #FFFFFF; font-size: 1.1rem; margin-bottom: 25px;">contact me!</p>
-  <a href="https://wa.me/918332059777" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; background-color: #25D366; color: #FFFFFF !important; padding: 12px 24px; border-radius: 8px; font-family: 'Poppins', sans-serif; text-decoration: none; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);"
-     onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(37, 211, 102, 0.4)'"
-     onmouseout="this.style.transform=''; this.style.boxShadow='0 4px 12px rgba(37, 211, 102, 0.3)'          transition: all 0.3s ease;
-          box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);"
-   onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(37, 211, 102, 0.4)';"
-   onmouseout="this.style.transform=''; this.style.boxShadow='0 4px 12px rgba(37, 211, 102, 0.3)'">
-    <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Get Your 50% Off Now!
-  </a>
+<section class="contact-section" style="
+  background: #1a365d; /* Navy blue matching nav */
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+">
+  <div style="max-width: 600px; margin: 0 auto;">
+    <h2 style="
+      color: #FFFFFF;
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    ">Let's build your next great website</h2>
+    
+    <p style="
+      color: rgba(255,255,255,0.9);
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    ">Ready to get started? Get in touch!</p>
+    
+    <a href="https://wa.me/918332059777" target="_blank" style="
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #48BB78; /* Fresh green for contrast */
+      color: white !important;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3);
+      border: 2px solid transparent;
+    "
+    onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(72, 187, 120, 0.4)'"
+    onmouseout="this.style.transform='';this.style.boxShadow='0 4px 15px rgba(72, 187, 120, 0.3)'">
+      <i class="fab fa-whatsapp" style="font-size: 1.2em;"></i> Get Your 50% Off Now!
+    </a>
+  </div>
 </section>
 
   <footer class="footer">
