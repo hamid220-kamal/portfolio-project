@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.min.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog | Hamid Kamal</title>
@@ -9,6 +10,68 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
+  <style>
+    /* Floating CTA Button - Bottom Right */
+.hire-me-float {
+  /* Positioning */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  
+  /* Visual Design */
+  background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 20px rgba(109, 72, 170, 0.4);
+  
+  /* Flexbox for emoji alignment */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+  /* Animations */
+  transition: all 0.3s ease;
+  animation: gentle-float 3s ease-in-out infinite;
+}
+
+/* Hover Effects */
+.hire-me-float:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(109, 72, 170, 0.6);
+  background: linear-gradient(135deg, #9d50bb 0%, #6e48aa 100%);
+}
+
+/* Emoji Animation */
+.float-emoji {
+  font-size: 1.2em;
+  transition: transform 0.3s;
+}
+.hire-me-float:hover .float-emoji {
+  transform: rotate(15deg);
+}
+
+/* Floating Animation */
+@keyframes gentle-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hire-me-float {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    width: auto;
+  }
+}
+  </style>
 <body>
   <header class="navbar">
     <div class="logo">Hamid Kamal</div>
@@ -42,6 +105,23 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <script>AOS.init();
+  // Confetti effect on click (requires confetti.js)
+document.querySelector('.hire-me-float').addEventListener('click', function() {
+  if (typeof confetti === 'function') {
+    confetti({
+      particleCount: 80,
+      spread: 60,
+      origin: { y: 0.6 }
+    });
+  }
+  
+  // Optional: Track clicks
+  console.log('Project page CTA clicked!');
+});</script>
+  <!-- Floating Hire Me Button -->
+<a href="contact.html" class="hire-me-float">
+  Hire Me (50% Off!) <span class="float-emoji">👨‍💻</span>
+</a>
 </body>
 </html>
